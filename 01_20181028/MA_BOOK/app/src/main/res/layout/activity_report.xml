@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="독서 기록"
+        android:textColor="@color/colorDarkBlack"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ListView
+                android:id="@+id/reportList"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_margin="13dp"
+                android:divider="#ffffff"
+                android:dividerHeight="10dp">
+
+            </ListView>
+
+            <Button
+                android:id="@+id/btn_to_add_report"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_margin="15dp"
+                android:background="@color/colorBtnBlack"
+                android:onClick="onClick"
+
+                android:text="추가"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <rotate xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="3000"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        />
+
+
+<!--    btn_transY_up.setOnClickListener {-->
+<!--    btn_transY_up.animate().translationY(-500f * dp).setDuration(duration).withEndAction {-->
+<!--    btn_transY_up.translationY = 0f-->
+<!--    }.start()-->
+
+<!--    }-->
+
+
+</set>

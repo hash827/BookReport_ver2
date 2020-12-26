@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ddwu.mobile.finalproject.ma01_20181028">
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.MainActivity"/>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.SplashActivity"
+            android:theme="@style/IntroTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY" android:value="@string/google_api_key"></meta-data>
+
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.ProgressBook"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.UpdateBook"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.AddReport"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.ReportList"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.SearchBook"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.BookDetail"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.LibraryList"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.LibraryDetail"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.UpdateReport"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.Upload"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.Settings"></activity>
+        <activity android:name="ddwu.mobile.finalproject.ma01_20181028.Statistics"></activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+
+    </application>
+
+</manifest>
